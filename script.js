@@ -9,7 +9,7 @@ let bgFlash = 0;
 let currentBgImage = null;
 
 // load your custom background images
-let imageSources = ["bg1.jpeg", "bg2.jpeg", "bg3.jpeg","bg4.jpeg"];
+let imageSources = ["bg1.jpeg", "bg2.jpeg", "bg3.jpeg","bg4.jpeg","bg5.jpeg","bg6.jpeg","bg7.jpeg","bg8.jpeg","bg9.jpeg"];
 imageSources.forEach(src => {
   let img = new Image();
   img.src = src;
