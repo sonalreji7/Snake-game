@@ -274,4 +274,13 @@ function initialize() {
 }
 
 initialize();
-
+document.querySelector("#restart").addEventListener("click", () => {
+  score = 0;
+  isGameOver = false;
+  snake = new Snake();
+  food = new Food();
+  particles = [];
+  document.querySelector("#score").innerText = "00";
+  document.querySelector("#restart").style.display = "none";
+  loop();
+});
