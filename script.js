@@ -244,13 +244,18 @@ function loop(timestamp = 0) {
 function gameOver() {
   if (score > maxScore) maxScore = score;
   window.localStorage.setItem("maxScore", maxScore);
+
   CTX.fillStyle="#4cffd7"; CTX.textAlign="center";
   CTX.font="bold 30px Poppins, sans-serif";
   CTX.fillText("GAME OVER",W/2,H/2);
   CTX.font="15px Poppins, sans-serif";
   CTX.fillText(`SCORE ${score}`,W/2,H/2+60);
   CTX.fillText(`MAXSCORE ${maxScore}`,W/2,H/2+80);
+
+  // Show restart button
+  document.getElementById("restart").style.display = "block";
 }
+
 
 // mobile button controls
 function pressKey(direction) {
@@ -269,3 +274,4 @@ function initialize() {
 }
 
 initialize();
+

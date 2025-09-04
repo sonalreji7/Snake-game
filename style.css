@@ -85,3 +85,7 @@ button {
 button:active {
   background: #38b2ac;
 }
+#restart{
+width: 120px;
+height: 50px;
+}
