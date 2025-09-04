@@ -39,7 +39,7 @@ let requestID;
 let snakeHeadImg = new Image();
 snakeHeadImg.src = "snake_head.png"; // face image
 let foodImg = new Image();
-foodImg.src = "apple.png"; // apple image
+foodImg.src = "food.png"; // apple image
 
 // Sounds
 let eatSound = new Audio("eat.mp3");
